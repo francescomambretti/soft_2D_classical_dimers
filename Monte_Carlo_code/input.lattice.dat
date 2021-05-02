@@ -1,0 +1,15 @@
+1.424674725
+0.7087776417
+1.23174243
+10
+10
+2
+1.13971
+
+1	ReadLattice >> u1x;		(comp x del I vettore di base)
+2	ReadLattice >> u2x;		(comp x del II vettore di base)
+3	ReadLattice >> u2y;		(comp y del II vettore di base)
+4	ReadLattice >> nx;		(numero di celle triangolari lungo x)
+5	ReadLattice >> ny;		(numero di celle triangolari lungo y)
+6	ReadLattice >> ncluster
+7	ReadLattice >> rho

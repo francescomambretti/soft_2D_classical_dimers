@@ -1,0 +1,35 @@
+0
+$TEMP
+5.0
+0.05
+3.00
+1
+3.50
+$DELTA00
+$DELTA20
+$DELTA50
+$DELTAR
+$DELTAB
+$DELTACM
+20
+20
+320000
+
+
+1	ReadInput >> restart;
+2	ReadInput >> temp;
+3	ReadInput >> khc 	(costante del termine di Hard_core)
+4	ReadInput >> r_hc 	(raggio hard core)
+5	ReadInput >> rcut;
+6	ReadInput >> check_verlet
+7	ReadInput >> rverlet;
+8	ReadInput >> delta00
+9	ReadInput >> delta20;
+10	ReadInput >> delta50;
+11	ReadInput >> alpha [0; pi=3.14]
+12	ReadInput >> deltaB;
+13	ReadInput >> deltaCM;
+14	ReadInput >> nblk;
+15	ReadInput >> nblkt;
+16	ReadInput >> nstep;
+

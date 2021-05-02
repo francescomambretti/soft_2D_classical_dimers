@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH --job-name soft2D  
+#SBATCH --time=02:00:00					 
+#SBATCH --nodes=1					
+#SBATCH --ntasks-per-node=32
+#SBATCH --cpus-per-task=4			
+#SBATCH --account uMI19_FisGal			
+#SBATCH --partition=m100_usr_prod		
+#SBATCH --error=error		
+#SBATCH --output=logfile
+
+executable="./Monte_Carlo_NVT_MPI.x"	
+
+module purge
+module load autoload profile/advanced spectrum_mpi/10.3.1--binary  xl/16.1.1--binary  gnu/8.4.0
+
+date
+mpirun $executable
+date

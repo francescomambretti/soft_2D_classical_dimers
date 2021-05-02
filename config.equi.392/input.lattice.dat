@@ -1,0 +1,17 @@
+1.42348
+0.71174
+1.2327698417790727
+14
+14
+2
+1.13971
+1.0471975511965976
+
+1	ReadLattice >> u1x;		(x component of 1st base vector)
+2	ReadLattice >> u2x;		(x component of 2nd base vector)
+3	ReadLattice >> u2y;		(y component of 2nd base vector)
+4	ReadLattice >> nx;		(cells along x)
+5	ReadLattice >> ny;		(cells along y)
+6	ReadLattice >> ncluster
+7	ReadLattice >> rho
+8	ReadLattice >> angle	(between lattice vectors)
