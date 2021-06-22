@@ -1,0 +1,21 @@
+2
+1
+5.0
+0.05
+3.0
+3.5
+8000
+5
+1800
+
+
+
+1	ReadInput >> m_lattice  (1 costruisco note righe e colonne, 2 importo)
+2	ReadInput >> s_lattice  (0 tutti diversi, 1 tutti uguali)
+3	ReadInput >> khc 	(costante del termine di Hard_core)
+4	ReadInput >> rhc	(raggio del termine di Hard_Core)
+5	ReadInput >> rcut;
+6	ReadInput >> rverlet;
+7	ReadInput >> nblk;
+8	ReadInput >> nstep;
+9	ReadInput >> nval;

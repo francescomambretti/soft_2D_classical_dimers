@@ -1,0 +1,17 @@
+$U1X
+$U2X
+$U2Y
+$NSPIN
+$NX
+$NY
+0.0
+1.13971
+
+
+1	ReadLattice >> u1x;		(comp x del I vettore di base)
+2	ReadLattice >> u2x;		(comp x del II vettore di base)
+3	ReadLattice >> u2y;		(comp y del II vettore di base)
+4	ReadInput >> nspin;
+5	ReadInput >> nx;
+6	ReadInput >> ny;
+7	ReadInput >> rho;

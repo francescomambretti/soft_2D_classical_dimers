@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#SBATCH --job-name nome					# se comincia così è un comando  
+#SBATCH --time=24:00:00					# max tempo 
+#SBATCH --nodes=4						# nodi di calcolo
+#SBATCH --ntasks-per-node=68			# processi per ogni nodo (a volte si trova ncores --> se usi openMP) (max 272 ma non usare più 68)
+#SBATCH --mem=83000						# NON TOCCARE
+#SBATCH --account IscrC_RENNA			# nome del progetto
+#SBATCH --partition=knl_usr_prod		# partizioni (prod o dbg)
+#SBATCH --error=output.error.txt		# nome del file di errore
+#SBATCH --output=output.terminal.txt	# nome del file di output
+
+# pacchetti da caricare (esegue tutto sui nodi di prod)
+module purge							# pulisci tutti i moduli	
+module load profile/advanced			
+module load intel/pe-xe-2018--binary
+module load intelmpi/2018--binary
+module load mkl/2018--binary
+
+executable="./Parallel_Tempering.knl"	#variabile del bash (eventuali argomenti vanno qui)
+
+date
+mpirun -np 272 $executable
+date

@@ -47,7 +47,7 @@ int size, my_rank, rank_0=0;
 
 //print parameters
 int prec=17, wd=25;											//significant digits
-const long double pi=3.1415927;								//pi
+const double pi=3.1415927;								//pi
 double incr=1.00001;
 
 //observables vector
