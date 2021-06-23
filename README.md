@@ -23,4 +23,4 @@ Parallel Tempering (PT) code works in a very similar way.
 
 2) compile with `make`
 
-3) To run: `./Parallel_Tempering.x` 
+3) To run:  `mpirun -np R ./Monte_Carlo_NVT_MPI.x ` where `R`is also the number of temperatures simulated
