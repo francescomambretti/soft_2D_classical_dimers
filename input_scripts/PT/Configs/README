@@ -1,0 +1,24 @@
+All files necessary to generate starting configurations
+
+Config_Creator.ipynb
+    notebook to generate the starting configurations at will (commented)
+    reads: input.lattice.dat
+
+config.<nameconfig>.(<nc>).<N_dimer>
+the value within () is optional
+each folder contains 2 files:
+ - input.lattice.dat    --> generic data concerning simulation box
+ - config.0             --> particle positions
+related to configurations coded as follows:
+
+<nameconfig>
+	- equi  --> equilateral triangular lattice -  dimers all aligned along pi/2
+    	- equi.random  -->  equilateral triangular lattice -  random dimers orientation
+	- long.random --> elongated triangular lattice (height much larger than the base) -  random dimers orientation
+	- middle.random  --> intermediate triangular lattice -  random dimers orientation	
+	- optimized.a2  --> optimized triangular lattice (obtained via minimization methods) with dimers all aligned along alpha/2 
+   	- optimized.a3  --> optimized triangular lattice (obtained via minimization methods) with dimers all aligned along 3*alpha/2  (vedi tesi o presentazione)
+	- optimized.pi2  --> optimized triangular lattice (obtained via minimization methods) with dimers all aligned along pi/2 
+
+<nc>        . distinguish between many configurations with the same features
+<N_dimer>    . number of dimers in the configurations

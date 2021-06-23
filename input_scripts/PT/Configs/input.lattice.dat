@@ -1,0 +1,16 @@
+$U1X
+$U2X
+$U2Y
+$NDIMER
+$NX
+$NY
+1.13971
+
+
+1	ReadLattice >> u1x;		
+2	ReadLattice >> u2x;		
+3	ReadLattice >> u2y;		
+4	ReadInput >> ndimer;
+5	ReadInput >> nx;
+6	ReadInput >> ny;
+7	ReadInput >> rho;
