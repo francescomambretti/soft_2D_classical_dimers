@@ -24,3 +24,7 @@ Parallel Tempering (PT) code works in a very similar way.
 2) compile with `make`
 
 3) To run:  `mpirun -np R ./Parallel_Tempering.x ` where `R`is also the number of temperatures simulated
+
+-----------------------------------------------
+
+We would like to cite the work by Percus and Kalos (O.E. Percus and M.H. Kalos, "Random Number Generators for MIMD Parallel Processors",  Journal of Parallel and Distributed Computing 6, 477-497 (1989)) for the algorithm underlying the random numbers generator (RNG) that we have implemented. In particular, here we include in MC and PT codes both the RANdom New York University (RANNYU) routine, in our custom C++ implementation. The original algorithm from which we have taken inspiration from was suggested by Knuth (see "Art of scientific computing"), and then adapted and improved by the group of M.H.Kalos. The RNG is a linear congruential which generates a sequence of random numbers which is different for each parallel process.
