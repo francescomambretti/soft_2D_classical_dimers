@@ -18,7 +18,7 @@ Note: the code is inherently parallel via simple MPI functions. Take care to use
 
 -----------------------------------------------
 
-Parallel Tempering (PT) code works in a very similar way.
+Parallel Tempering (PT) code works in a very similar way. Also here, an overview is provided in `overview.ipynb` file.
 
 1) To set up: read and use the Jupyter Notebooks contained in the `input_scripts` folder
 
