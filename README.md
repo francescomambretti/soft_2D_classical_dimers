@@ -1,5 +1,6 @@
 # soft_2D_classical_dimers
  Monte Carlo (MC) simulation of 2-particle cluster phase of softly repulsive particles in the canonical ensemble.
+ An overview is provided in `overview.ipynb' file.
  
  Prerequisites: MPI-C/C++ compiler,  Python
 
